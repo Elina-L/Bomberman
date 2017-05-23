@@ -5,7 +5,10 @@
 
 # Music - Subway, by Maplestory, all rights belong to Maplestory
 
-import simplegui
+try:
+    import simplegui
+except ImportError:
+    import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 import math
 import random
 
